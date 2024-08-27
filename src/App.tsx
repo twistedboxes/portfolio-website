@@ -3,7 +3,7 @@ import Menu from "./components/Menu";
 
 const App = () => {
   return (
-    <div className="flex flex-wrap gap-0">
+    <div className="flex flex-wrap gap-0 m-0">
       <Hero />
       <Menu />
     </div>
