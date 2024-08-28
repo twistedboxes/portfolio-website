@@ -4,7 +4,6 @@ import ErrorPage from "../ErrorPage";
 import About from "./About";
 import Contact from "./Contact";
 import Projects from "./Projects";
-import { motion } from "framer-motion";
 const AnimatedRoutes = () => {
   return (
     <Routes>

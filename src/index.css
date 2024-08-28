@@ -3,16 +3,27 @@
 @tailwind utilities;
 
 
+/* Hide scrollbar for Chrome, Safari and Opera */
+*::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+* {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 
 
 :root {
-  /* --color-primary: #FF33F0; */
   --color-primary: #F82E62;
   --color-secondary: #FFF72A;
   --color-accent: #35B5C1;
