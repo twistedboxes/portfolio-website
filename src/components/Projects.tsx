@@ -8,11 +8,11 @@ const Projects = () => {
     <>
       <AnimatedScroll />
       <div className="flex h-[100vh] w-full snap-y snap-mandatory flex-col justify-center overflow-y-scroll scroll-smooth bg-[--color-secondary] leading-3">
-        <h1 className="select-none snap-end break-words text-6xl font-black uppercase leading-[0.8em] lg:ml-12 lg:mt-[180%] lg:text-[calc(8vw+8vh)]">
+        <h1 className="lg:w-2/3 pb-10 lg:text-left text-center select-none snap-center break-words text-6xl font-black uppercase lg:leading-[0.8em] lg:ml-12 mt-[320vh] lg:mt-[190%] lg:text-[12em]">
           Recent projects
         </h1>
-        <h2 className="mb-40 mt-4 w-full break-words pb-8 text-center text-xl font-black uppercase tracking-widest text-[--color-primary] lg:ml-12 lg:text-left">
-          Have a look at some of the projects I’ve worked on //
+        <h2 className="mb-40 mt-[-1.8rem] w-full break-words pb-8 text-center text-xl font-black uppercase tracking-widest text-[--color-primary] lg:ml-12 lg:text-left">
+          Have a look at some of the projects I’ve worked on.
         </h2>
         <ProjectCard
           title="Let It All Out"

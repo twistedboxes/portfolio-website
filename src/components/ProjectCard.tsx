@@ -8,15 +8,32 @@ interface IProjectCard {
 
 const ProjectCard = ({ title, stack, link, desc, image }: IProjectCard) => {
   return (
-    <div className="my-8 flex h-screen w-full shrink-0 snap-center flex-col items-center justify-center gap-0 bg-[--color-primary] p-7 text-xl">
-      <div className="flex h-3/4 w-3/4 flex-col items-center justify-center rounded-sm bg-[--color-secondary] p-4 py-8 shadow-2xl">
-        <img className="mb-8 max-w-[70%]" src={image} alt="projectImage" />
-        <div className="flex w-full justify-around">
-          <h2 className="text-2xl font-black decoration-[--color-accent] hover:text-[--color-primary] hover:underline">
-            {title}
+    <div className="flex h-screen w-full shrink-0 snap-center flex-col items-center justify-center gap-0 bg-[--color-primary] p-7 text-xl">
+      <div className="flex h-3/4 flex-col items-center justify-center rounded-sm bg-white p-4 py-8 shadow-2xl lg:w-3/4">
+        <div
+          style={{
+            backgroundImage: `url(${image})`,
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+          }}
+          className="mb-2 h-full w-full p-2"
+        ></div>
+        <div className="w-full px-2 text-center lg:flex lg:justify-between lg:text-left">
+          <h2 className="text-2xl font-black decoration-[--color-accent] hover:text-[--color-primary] hover:underline lg:w-1/3">
+            <a
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {title}
+            </a>
           </h2>
-          <span className="lg:text-right">{desc}</span>
+          <span className="p-2">{desc}</span>
         </div>
+        <p className="w-full p-2 text-center text-[--color-primary] lg:text-right">
+          {stack.join(" - ")}
+        </p>
       </div>
     </div>
   );
