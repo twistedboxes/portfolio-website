@@ -5,11 +5,11 @@ const Projects = () => {
   return (
     <>
       <motion.div
-        initial={{ translateX: 0 }}
-        animate={{ translateX: "100%" }}
-        exit={{ translateX: "-200%" }}
-        transition={{ duration:0.5, easings: ["easeIn", "easeOut"] }}
-        className="fixed left-0 top-0 h-screen w-full origin-left bg-[--color-primary]"
+        initial={{ translateX: "30vw" }}
+        animate={{ translateX: "-130vw" }}
+        exit={{ translateX: "100%" }}
+        transition={{ duration:1, easings: ["easeIn", "easeOut"] }}
+        className="fixed right-[30vw] top-0 h-screen w-full origin-left bg-[--color-primary]"
       ></motion.div>
       <div className="flex flex-col h-screen items-center justify-center overflow-hidden bg-[--color-secondary]">
         <h1 className="text-3xl">I'm projects page</h1>

@@ -4,9 +4,9 @@ const Hero = () => {
   return (
     <>
       <motion.div
-        initial={{ translateX: 0 }}
-        animate={{ translateX: "-100%" }}
-        transition={{ duration: 0.7, easings:["easeIn","easeOut"] }}
+        initial={{ translateX: "0" }}
+        animate={{ translateX: "100%" }}
+        transition={{ duration: 1, easings:["easeIn","easeOut"] }}
         className="fixed h-screen left-0 top-0 w-full origin-left bg-[--color-secondary]"
       ></motion.div>
       <div className="h-[55vh] w-full cursor-default break-words bg-[--color-secondary] p-4 font-black text-black md:flex md:flex-col md:items-center md:justify-center lg:h-screen lg:w-2/3">

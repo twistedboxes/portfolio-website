@@ -4,10 +4,10 @@ const About = () => {
   return (
     <>
       <motion.div
-        initial={{ translateX: 0 }}
-        animate={{ translateX: "100%" }}
-        exit={{ translateX: "-200%" }}
-        transition={{ duration:0.5, easings: ["easeIn", "easeOut"] }}
+         initial={{ translateX: "0%" }}
+         animate={{ translateX: "-100%" }}
+         exit={{ translateX: "100%" }}
+         transition={{ duration:1, easings: ["easeIn", "easeOut"] }}
         className="fixed left-0 top-0 h-screen w-full origin-left bg-[--color-primary]"
       ></motion.div>
       <div className="flex h-screen flex-col items-center justify-center overflow-hidden bg-[--color-secondary]">
