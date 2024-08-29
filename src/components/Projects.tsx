@@ -13,6 +13,7 @@ const projectPreview = listOfProjects.map((project) => {
       desc={project.desc}
       key={project.title}
       stack={project.stack}
+      sourceCode={project.sourceCode}
     />
   );
 });
