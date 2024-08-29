@@ -1,33 +1,8 @@
 import { Link } from "react-router-dom";
 import AnimatedScroll from "./AnimatedScroll";
 import ProjectCard from "./ProjectCard";
-import letitallpreview from "../assets/letitallpreview.png";
-import easyCryptoPreview from "../assets/easyCryptoPreview.png";
-import photographerPortfolio from "../assets/photographerPortfolio.png";
 
-const listOfProjects = [
-  {
-    title: "Let It All Out",
-    desc: "Simple journaling tool with a stress-levels tracker",
-    stack: ["NextJS", "Tailwind", "MongoDB", "Vercel"],
-    link: "https://www.letitallout.xyz",
-    image: letitallpreview,
-  },
-  {
-    title: "Easy Crypto",
-    desc: "A way to check the current status of the top 100 Cryptocurrencies in the world, using API calls",
-    stack: ["React", "Tailwind", "Netlify"],
-    link: "https://easycryptoviewer.netlify.app/",
-    image: easyCryptoPreview,
-  },
-  {
-    title: "Photographer Portfolio Concept",
-    desc: "A Showcase website",
-    stack: ["React", "Tailwind", "Netlify"],
-    link: "https://jenna-doe-photography.netlify.app/",
-    image: photographerPortfolio,
-  },
-];
+import { listOfProjects } from "../sources";
 
 const projectPreview = listOfProjects.map((project) => {
   return (
@@ -46,7 +21,7 @@ const Projects = () => {
   return (
     <>
       <AnimatedScroll />
-      <div className="flex h-[100vh] w-full snap-y snap-mandatory flex-col justify-center overflow-y-scroll scroll-smooth bg-[--color-secondary] leading-3">
+      <div className="h-[100vh] w-full snap-y snap-mandatory overflow-y-scroll scroll-smooth bg-[--color-secondary] leading-3">
         <h1 className="mt-[320vh] select-none snap-center break-words pb-10 text-center text-6xl font-black uppercase lg:ml-12 lg:mt-[190%] lg:w-2/3 lg:text-left lg:text-[12em] lg:leading-[0.8em]">
           Recent projects
         </h1>

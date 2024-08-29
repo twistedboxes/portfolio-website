@@ -1,10 +1,4 @@
-interface IProjectCard {
-  title: string;
-  stack: string[];
-  link: string;
-  desc: string;
-  image: string;
-}
+import { IProjectCard } from "../types";
 
 const ProjectCard = ({ title, stack, link, desc, image }: IProjectCard) => {
   return (
@@ -27,7 +21,7 @@ const ProjectCard = ({ title, stack, link, desc, image }: IProjectCard) => {
               {title}
             </a>
           </h2>
-          <span className="p-2">{desc}</span>
+          <span className="p-2 text-right">{desc}</span>
         </div>
         <p className="w-full p-2 text-center text-[--color-primary] lg:text-right">
           {stack.join(" - ")}
