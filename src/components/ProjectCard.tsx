@@ -16,7 +16,7 @@ const ProjectCard = ({ title, stack, link, desc, image }: IProjectCard) => {
           className="mb-2 h-full w-full"
         ></div>
         <div className="w-full px-2 text-center lg:flex lg:justify-between lg:text-left">
-          <h2 className="text-2xl font-black decoration-[--color-accent] hover:text-[--color-primary] hover:underline lg:w-1/3">
+          <h2 className="text-3xl font-black decoration-[--color-accent] hover:text-[--color-primary] hover:underline lg:w-1/3">
             <a href={link} target="_blank" rel="noopener noreferrer">
               {title}
             </a>
