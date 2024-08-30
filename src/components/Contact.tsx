@@ -7,7 +7,7 @@ const Contact = () => {
       <AnimatedScroll />
       <div className="flex flex-wrap items-center justify-between">
         <div className="w-full bg-[--color-secondary] lg:h-screen lg:w-2/3">
-          <h1 className="mt-[6em] text-center text-6xl font-black uppercase leading-3 lg:ml-6 lg:mt-[26vh] lg:w-full lg:text-left lg:text-[12em] lg:leading-[0.8em]">
+          <h1 className="mt-[6em] text-center text-6xl font-black uppercase leading-3 tracking-tight lg:ml-2 lg:mr-2 lg:mt-[26vh] lg:w-full lg:text-left lg:text-[12em] lg:leading-[0.8em]">
             Contacts
           </h1>
           <h2 className="my-8 w-full break-words pb-8 text-center text-xl font-black uppercase tracking-widest text-[--color-primary] lg:ml-8 lg:mt-2 lg:text-left">
@@ -18,7 +18,7 @@ const Contact = () => {
           initial={{ opacity: 0, translateX: 200 }}
           animate={{ opacity: 1, translateX: 0 }}
           transition={{ duration: 1.2, ease: "easeInOut" }}
-          className=" text-gray-100 flex w-full flex-col items-center justify-center gap-4 break-words px-6 py-12 text-center text-2xl font-bold leading-9 lg:h-screen lg:w-1/3 lg:px-12 lg:pt-[12em] lg:text-right lg:text-3xl"
+          className="flex w-full flex-col items-center justify-center gap-4 break-words px-6 py-12 text-center text-2xl font-bold leading-9 text-gray-100 lg:h-screen lg:w-1/3 lg:px-12 lg:pt-[12em] lg:text-right lg:text-3xl"
         >
           <a
             className="text-3xl font-black decoration-[--color-accent] underline-offset-8 transition-colors duration-200 hover:text-[--color-secondary] hover:underline"
