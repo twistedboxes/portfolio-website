@@ -16,7 +16,7 @@ export const listOfProjects: TListOfProjects = [
   {
     title: "Personal Portfolio",
     desc: "The website you're on!",
-    stack: ["React", "Typescript", "Tailwind"],
+    stack: ["React", "Typescript", "Tailwind", "Framer Motion"],
     link: "/",
     image: personalPortfolio,
   },
