@@ -7,10 +7,10 @@ const About = () => {
       <AnimatedScroll />
       <div className="flex flex-wrap items-center justify-between">
         <div className="w-full bg-[--color-secondary] lg:h-screen lg:w-1/2">
-          <h1 className="mt-[6em] break-words text-center text-6xl font-black uppercase leading-3 lg:ml-6 lg:mt-[25vh] lg:w-full lg:text-left lg:text-[12em] lg:leading-[0.8em]">
+          <h1 className="mt-[5em] break-words text-center text-6xl font-black uppercase leading-3 lg:ml-6 lg:mt-[25vh] lg:w-full lg:text-left lg:text-[12em] lg:leading-[0.8em]">
             About
           </h1>
-          <h2 className="my-8 w-full break-words pb-8 text-center text-xl font-black uppercase tracking-widest text-[--color-primary] lg:ml-8 lg:mt-2 lg:text-left">
+          <h2 className="my-8 mb-[4em] w-full break-words pb-8 text-center text-xl font-black uppercase tracking-widest text-[--color-primary] lg:ml-8 lg:mt-2 lg:text-left">
             Learn more about me
           </h2>
         </div>
@@ -26,19 +26,19 @@ const About = () => {
             development to bring my designs to life, learning front-end
             technologies such as{" "}
             <span className="text-[--color-secondary]">
-              HTML, CSS, JavaScript
+              HTML, CSS, JavaScript, Typescript
             </span>
             , and currently focusing on{" "}
             <span className="text-[--color-secondary]">
               ReactJS, NextJS, and Tailwind
             </span>
-            .
+            , using GitHub to keep track of my progress.
           </p>
           I’m eager to explore new technologies and take on challenging
           projects. I am proficient with various operating systems, Adobe
           Creative Suite, and virtualization tools, and have a solid
           understanding of Unix shell and command-line software.
-          <h3 className="lg:mt-6 w-full mt-4 lg:text-right text-center text-5xl font-black text-[--color-secondary]">
+          <h3 className="mt-4 w-full text-center text-5xl font-black text-[--color-secondary] lg:mt-6 lg:text-right">
             Certifications
           </h3>
           <a
@@ -47,11 +47,14 @@ const About = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h4 className="lg:text-right text-center"><span className="text-[--color-secondary]">Meta</span> Front-End Developer</h4>
+            <h4 className="text-center lg:text-right">
+              <span className="text-[--color-secondary]">Meta</span> Front-End
+              Developer
+            </h4>
           </a>
           <p className="break-words">
-            I have successfully completed the 9-course program that prepares learners
-            for an entry-level career as front-end developers.
+            I have successfully completed the 9-course program that prepares
+            learners for an entry-level career as front-end developers.
           </p>
         </div>
       </div>
