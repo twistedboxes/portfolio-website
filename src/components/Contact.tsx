@@ -18,7 +18,7 @@ const Contact = () => {
           initial={{ opacity: 0, translateX: 200 }}
           animate={{ opacity: 1, translateX: 0 }}
           transition={{ duration: 1.2, ease: "easeInOut" }}
-          className="flex w-full flex-col items-center justify-center gap-4 break-words px-6 py-12 text-center text-2xl font-bold leading-9 lg:h-screen lg:w-1/3 lg:px-12 lg:pt-[12em] lg:text-right lg:text-3xl"
+          className=" text-gray-100 flex w-full flex-col items-center justify-center gap-4 break-words px-6 py-12 text-center text-2xl font-bold leading-9 lg:h-screen lg:w-1/3 lg:px-12 lg:pt-[12em] lg:text-right lg:text-3xl"
         >
           <a
             className="text-3xl font-black decoration-[--color-accent] underline-offset-8 transition-colors duration-200 hover:text-[--color-secondary] hover:underline"

@@ -18,7 +18,7 @@ const About = () => {
           initial={{ opacity: 0, translateX: 200 }}
           animate={{ opacity: 1, translateX: 0 }}
           transition={{ duration: 0.8, ease: "easeInOut" }}
-          className="flex flex-col items-center justify-center gap-6 overflow-y-scroll break-words px-6 py-8 text-[1.6rem] font-bold leading-9 lg:h-screen lg:w-1/2 lg:px-12 lg:pt-[14em] lg:text-right lg:text-2xl"
+          className="flex text-gray-100 flex-col items-center justify-center gap-6 overflow-y-scroll break-words px-6 py-8 text-[1.6rem] font-bold leading-9 lg:h-screen lg:w-1/2 lg:px-12 lg:pt-[14em] lg:text-right lg:text-2xl"
         >
           <motion.h3
             initial={{ opacity: 0, translateX: 200 }}
@@ -60,7 +60,7 @@ const About = () => {
             Certifications
           </motion.h3>
           <a
-            className="my-4 w-full text-right text-3xl font-black text-black decoration-[--color-accent] underline-offset-8 transition-colors duration-200 hover:text-[--color-secondary] hover:underline"
+            className="my-4 w-full text-right text-3xl font-black text-gray-100 decoration-[--color-accent] underline-offset-8 transition-colors duration-200 hover:text-[--color-secondary] hover:underline"
             href="https://www.coursera.org/account/accomplishments/professional-cert/EU246NTKX3J2"
             target="_blank"
             rel="noopener noreferrer"
@@ -77,7 +77,7 @@ const About = () => {
         </motion.div>
       </div>
       <Link
-        className="fixed right-0 top-0 mt-8 bg-black text-2xl font-black leading-[0.3em] text-white hover:bg-[--color-primary]"
+        className="fixed right-0 top-0 mt-8 bg-black text-2xl font-black leading-[0.3em] text-gray-100 hover:bg-[--color-primary]"
         to="/"
       >
         <button className="p-4">BACK</button>
