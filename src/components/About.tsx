@@ -15,10 +15,19 @@ const About = () => {
           </h2>
         </div>
         <motion.div
-        initial={{opacity: 0, translateX: 200}}
-        animate={{opacity: 1, translateX: 0}}
-        transition={{duration: 1.2, ease: "easeInOut"}}
-         className="flex flex-col items-center justify-center gap-6 overflow-y-scroll break-words px-6 py-8 text-[1.6rem] font-bold leading-9 lg:h-screen lg:w-1/2 lg:px-12 lg:pt-[12em] lg:text-right lg:text-2xl">
+          initial={{ opacity: 0, translateX: 200 }}
+          animate={{ opacity: 1, translateX: 0 }}
+          transition={{ duration: 0.8, ease: "easeInOut" }}
+          className="flex flex-col items-center justify-center gap-6 overflow-y-scroll break-words px-6 py-8 text-[1.6rem] font-bold leading-9 lg:h-screen lg:w-1/2 lg:px-12 lg:pt-[14em] lg:text-right lg:text-2xl"
+        >
+          <motion.h3
+            initial={{ opacity: 0, translateX: 200 }}
+            animate={{ opacity: 1, translateX: 0 }}
+            transition={{ duration: 1, ease: "easeInOut", delay: 0.1 }}
+            className="mt-4 w-full text-center text-5xl font-black text-[--color-secondary] lg:mt-6 lg:text-right"
+          >
+            Who am I?
+          </motion.h3>
           <p className="pt-8">
             Passionate about technology, I began my programming journey with
             <span className="text-[--color-secondary]"> Python</span>,
@@ -43,9 +52,11 @@ const About = () => {
           Creative Suite, and virtualization tools, and have a solid
           understanding of Unix shell and command-line software.
           <motion.h3
-          initial={{ opacity: 0, translateX: 200 }}
-          animate={{ opacity: 1, translateX: 0 }}
-          transition={{ duration: 1.2, ease: "easeInOut", delay:0.3 }} className="mt-4 w-full text-center text-5xl font-black text-[--color-secondary] lg:mt-6 lg:text-right">
+            initial={{ opacity: 0, translateX: 200 }}
+            animate={{ opacity: 1, translateX: 0 }}
+            transition={{ duration: 1, ease: "easeInOut", delay: 0.1 }}
+            className="mt-4 w-full text-center text-5xl font-black text-[--color-secondary] lg:mt-6 lg:text-right"
+          >
             Certifications
           </motion.h3>
           <a
