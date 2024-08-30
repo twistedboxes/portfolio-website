@@ -14,7 +14,11 @@ const About = () => {
             Learn more about me
           </h2>
         </div>
-        <div className="flex flex-col items-center justify-center gap-6 overflow-y-scroll break-words px-6 py-8 text-[1.6rem] font-bold leading-9 lg:h-screen lg:w-1/2 lg:px-12 lg:pt-[12em] lg:text-right lg:text-2xl">
+        <motion.div
+        initial={{opacity: 0, translateX: 200}}
+        animate={{opacity: 1, translateX: 0}}
+        transition={{duration: 1.2, ease: "easeInOut"}}
+         className="flex flex-col items-center justify-center gap-6 overflow-y-scroll break-words px-6 py-8 text-[1.6rem] font-bold leading-9 lg:h-screen lg:w-1/2 lg:px-12 lg:pt-[12em] lg:text-right lg:text-2xl">
           <p className="pt-8">
             Passionate about technology, I began my programming journey with
             <span className="text-[--color-secondary]"> Python</span>,
@@ -38,12 +42,15 @@ const About = () => {
           projects. I am proficient with various operating systems, Adobe
           Creative Suite, and virtualization tools, and have a solid
           understanding of Unix shell and command-line software.
-          <h3 className="mt-4 w-full text-center text-5xl font-black text-[--color-secondary] lg:mt-6 lg:text-right">
+          <motion.h3
+          initial={{ opacity: 0, translateX: 200 }}
+          animate={{ opacity: 1, translateX: 0 }}
+          transition={{ duration: 1.2, ease: "easeInOut", delay:0.3 }} className="mt-4 w-full text-center text-5xl font-black text-[--color-secondary] lg:mt-6 lg:text-right">
             Certifications
-          </h3>
+          </motion.h3>
           <a
             className="my-4 w-full text-right text-3xl font-black text-black decoration-[--color-accent] underline-offset-8 transition-colors duration-200 hover:text-[--color-secondary] hover:underline"
-            href="https://www.coursera.org/account/accomplishments/specialization/certificate/EU246NTKX3J2"
+            href="https://www.coursera.org/account/accomplishments/professional-cert/EU246NTKX3J2"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -56,7 +63,7 @@ const About = () => {
             I have successfully completed the 9-course program that prepares
             learners for an entry-level career as front-end developers.
           </p>
-        </div>
+        </motion.div>
       </div>
       <Link
         className="fixed right-0 top-0 mt-8 bg-black text-2xl font-black leading-[0.3em] text-white hover:bg-[--color-primary]"
