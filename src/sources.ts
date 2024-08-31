@@ -18,6 +18,7 @@ export const listOfProjects: TListOfProjects = [
     desc: "The website you're on!",
     stack: ["React", "Typescript", "Tailwind", "Framer Motion"],
     link: "/",
+    sourceCode: "https://github.com/twistedboxes/portfolio-website",
     image: personalPortfolio,
   },
 
