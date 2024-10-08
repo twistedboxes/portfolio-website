@@ -5,9 +5,9 @@ import { HashRouter as Router, BrowserRouter, Route, Link, Routes } from "react-
 import AnimatedRoutes from "./components/AnimatedRoutes.js";
 
 createRoot(document.getElementById("root") as HTMLElement).render(
-  <Router>
+  <BrowserRouter>
     <StrictMode>
       <AnimatedRoutes />
     </StrictMode>
-  </Router>,
+  </BrowserRouter>,
 );
